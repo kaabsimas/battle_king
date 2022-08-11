@@ -10,6 +10,9 @@ export class LoadingScene extends Scene {
     preload(): void {
         this.load.baseURL = 'assets/';
 
+        this.load.image('tiles', 'tilemaps/tiles/dungeon-16-16.png');
+        this.load.tilemapTiledJSON('dungeon', 'tilemaps/mapa.json');
+        
         this.load.image('king', 'sprites/king.png');
         this.load.atlas('a-king', 'spritesheets/a-king.png', 'spritesheets/a-king_atlas.json');
     }
