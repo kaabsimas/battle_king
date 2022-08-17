@@ -23,7 +23,7 @@ export class Level1 extends Scene {
 
     private initMap(): void {
         this.map = this.make.tilemap({ key: 'dungeon', tileWidth: 16, tileHeight: 16 });
-        this.tileset = this.map.addTilesetImage('dungeon', 'tiles');
+        this.tileset = this.map.addTilesetImage('dungeon-16-16', 'tiles');
         this.groundLayer = this.map.createLayer('Ground', this.tileset, 0, 0);
         this.wallsLayer = this.map.createLayer('Walls', this.tileset, 0, 0);
         this.physics.world.setBounds(0, 0, this.wallsLayer.width, this.wallsLayer.height);
